@@ -40,7 +40,10 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin({
-      patterns: [{ from: "wasm", to: "./wasm" }],
+      patterns: [
+        { from: "wasm", to: "./wasm" },
+        { from: "static", to: "./static" },
+      ],
     }),
   ],
 };
