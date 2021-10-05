@@ -2,13 +2,13 @@ import React, { Fragment } from "react";
 import { AppDiv } from "./app-style";
 import DropIFC from "../DropIFC";
 import LoadLocalIFC from "../LoadLocalIFC";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 
 const App = () => {
   return (
     <Fragment>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <AppDiv>
           <Switch>
@@ -16,7 +16,7 @@ const App = () => {
             <Route path="/" component={DropIFC} />
           </Switch>
         </AppDiv>
-      </BrowserRouter>
+      </HashRouter>
     </Fragment>
   );
 };
