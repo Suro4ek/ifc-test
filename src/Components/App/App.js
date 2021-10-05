@@ -13,7 +13,7 @@ const App = () => {
     const viewerAPI = new IfcViewerAPI({ container });
     viewerAPI.addAxes();
     viewerAPI.addGrid();
-    viewerAPI.IFC.setWasmPath("static/");
+    viewerAPI.IFC.setWasmPath("wasm/");
     viewerRef.current = viewerAPI;
   }, []);
   const onDrop = (files) => {
